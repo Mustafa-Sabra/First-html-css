@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="wlcome to my page">
+        <title>Our page</title>
+        <link rel="stylesheet" href="css/momo.css">
+        <script></script>
+        <style>
+          
+          table,td
+            {
+               border-width:1px 0 0 0 ;
+               border-style:solid;
+               border-color:#000
+            }
+          .mo
+             {
+                padding:10px 0 20px 850px;
+            
+             }
+        </style>
+    </head>  
+    <body>
+       
+        <img src="images/01.jpg" alt="image" style="width:1670px;height:750px" >
+     
+     
+        <div style="margin:90px 90px 0;border-bottom:1px solid #1F2489">
+           <!--head lines-->
+              <h1 style="font-weight:lighter; font-family: Arial, Helvetica, sans-serif; color:#4F4F4F; font-size:40px"><span style="font-size:50px; color:#A3A1A1">15</span> Managing Tables</h1>
+              <h5 style="font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#333131">This chapter describes the various aspects of managing tables, and includes the following topics:</h5>
+        
+        <!--unorder list consist of group of links-->
+              <ul>
+                <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1008437" style="color:#2A97AF;margin:10px">About Tables</a></li>
+                   <br>
+                <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1008437" style="color:#2A97AF;margin:10px">Guidelines for Managing Tables</a></li>
+                   <br>
+                <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1106335" style="color:#2A97AF;margin:10px">Creating Tables</a></li>
+                   <br>
+                <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#CJAEJGJF" style="color:#2A97AF;margin:10px">Loading Tables</a></li>
+                    <br>
+                <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1006473" style="color:#2A97AF;margin:10px">Automatically Collecting Statistics on Tables</a></li>
+                   <br>
+                <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1006494" style="color:#2A97AF;margin:10px">Altering Tables</a></li>
+                   <br>
+                <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1006754" style="color:#2A97AF;margin:10px">Redefining Tables Online</a></li>
+                   <br>
+               <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1010007" style="color:#2A97AF;margin:10px">Auditing Table Changes Using Flashback Transaction Query</a></li>
+                   <br>
+               <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1010008" style="color:#2A97AF;margin:10px">Recovering Tables Using the Flashback Table Feature</a></li>
+                   <br>
+               <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1011125" style="color:#2A97AF;margin:10px">Dropping Tables</a></li>
+                   <br>
+               <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1010137" style="color:#2A97AF;margin:10px">Using Flashback Drop and Managing the Recycle Bin</a></li>
+                   <br>
+               <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1010378" style="color:#2A97AF;margin:10px">Managing Index-Organized Tables</a></li>
+                   <br>
+               <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1007424" style="color:#2A97AF;margin:10px">Managing External Tables</a></li>
+                   <br>
+               <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1007685" style="color:#2A97AF;margin:10px">Viewing Information About Tables</a></li>
+            </ul>  <br> 
+        </div>
+          
+       
+        
+        
+        
+        
+        
+        <div style="margin-left:90px;">
+           <!--headline-->
+            <h1 style="color:#3C69B7; font-family:Arial, Helvetica, sans-serif;font-weight:lighter">About Tables</h1>
+            <!--a set of paragraphs--> 
+            <p> Tables are the basic unit of data storage in an Oracle Database. Data is stored in rows and columns. You define
+               a table with a table name, such as <span style="background-color:#ddd">employees</span>, and a set of columns. You give each column a column name,
+               such as <span style="background-color:#ddd">employee_id</span>, <span style="background-color:#ddd">last_name</span>, and <span style="background-color:#ddd">job_id</span>; a datatype, such as <span style="background-color:#ddd">VARCHAR2</span>, <span style="background-color:#ddd">DATE</span>, or <span style="background-color:#ddd">NUMBER</span>; and a
+               width. The width can be predetermined by the datatype, as in <span style="background-color:#ddd">DATE</span>. If columns are of the <span style="background-color:#ddd">NUMBER</span> datatype,
+               define precision and scale instead of width. A row is a collection of column information corresponding to a
+               single record.</p>
+
+            <p>You can specify rules for each column of a table. These rules are called integrity constraints. One example is
+               a <span style="background-color:#ddd">NOT NULL</span> integrity constraint. This constraint forces the column to contain a value in every row.</p>
+           
+            <p>You can also invoke transparent data encryption to encrypt data before storing it in the datafile. Then, if users
+               attempt to circumvent the database access control mechanisms by looking inside datafiles directly with
+               operating system tools, encryption prevents these users from viewing sensitive data.</p>
+
+            <p>After you create a table, insert rows of data using SQL statements. Table data can then be queried, deleted, or
+               updated using SQL.</p>
+        </div>
+                  <br>
+        
+        
+        
+        
+        
+        
+        <div style="border-bottom:1px solid #1F2489">
+          
+          <div style="border-left:3px solid #7C94BF; background:#E1E9F2;margin:0 20px 0 90px ;padding-left:40px ">
+              
+              <h2 style="color:#3767BA;font-weight:bold;padding-top:20px">See Also :</h2>
+              <ul>
+                 <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14220/schema.htm#CNCPT211" style="color:#2A97AF;font-size:17px;font-style:italic">Oracle Database Concepts</a> for a more detailed description of tables</li>
+                    <br>
+                 <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/schema.htm#g1019613"style="color:#2A97AF;font-size:17px;">Chapter 14, "Managing Space for Schema Objects"</a> for guidelines for managing space for tables</li>
+                    <br>
+                 <li><a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/general.htm#g1017986"style="color:#2A97AF;font-size:17px;"> Chapter 13, "Managing Schema Objects"</a>for information on additional aspects of managing tables,such as specifying integrity constraints and analyzing tables</li>
+                    <br>
+                 <li style="padding-bottom:30px"><a href="https://docs.oracle.com/cd/B19306_01/network.102/b14266/toc.htm" style="color:#2A97AF;font-size:17px; font-style:italic"> Oracle Database Security Guide</a> for a discussion of transparent data encryption</li>
+              </ul>
+          
+          </div>
+          <br>
+        
+        </div>
+        
+        
+        <div style="margin-left:90px;">
+            <h1 style="font-size:28px; font-family:Arial, Helvetica, sans-serif;">Consider Your Options for the Type of Table to Create</h1>
+            <h3 style="font-family:Arial, Helvetica, sans-serif;">What types of tables can you create? Here are some choices:</h3>
+        
+            <table>
+               <tr >
+                  <th style="background:#000; color:white;font-family: Arial, Helvetica, sans-serif;">Type of Table</th>
+                  <th style="background:#000; color:white;font-family: Arial, Helvetica, sans-serif;">Description</th>
+               </tr>
+            
+               <tr>
+                  <td >Ordinary (heap-organized) table</td>
+                  <td class="mo">This is the basic, general purpose type of table which is the primary subject of this chapter. Its data is stored as an unordered collection (heap)</td>
+               </tr>
+            
+               <tr>
+                  <td class="border">Clustered table </td>
+                  <td class="mo">A clustered table is a table that is part of a cluster. A cluster is a group of tables that share
+                       the same data blocks because they share common columns and are often used together. Clusters and clustered tables are discussed in <a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/clustrs.htm#g1009415" style="color:#2A97AF;font-size:18px; text-decoration:none">Chapter 18, "Managing Clusters"</a>.</td>
+               </tr>
+            
+               <tr>
+                  <td class="border">Index-organized table</td>
+                  <td class="mo">Unlike an ordinary (heap-organized) table, data for an index-organized table is stored in a B-tree index structure in a primary key sorted manner. Besides storing the primary key column values of an index-organized table row, each index entry in the B-tree stores the nonkey column values as well.<br>Index-organized tables are discussed in<a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/tables.htm#i1010378" style="color:#2A97AF;font-size:18px; text-decoration:none">"Managing Index-Organized Tables"</a>. </td>
+               </tr>
+              
+               <tr>
+                  <td class="border">Partitioned table </td>
+                  <td class="mo">Partitioned tables allow your data to be broken down into smaller, more manageable pieces called partitions, or even subpartitions. Each partition can be managed individually, and can operate independently of the other partitions, thus providing a structure that can be better tuned for availability and performance.<br> Partitioned tables are discussed in <a href="https://docs.oracle.com/cd/B19306_01/server.102/b14231/partiti.htm#g1030303" style="color:#2A97AF;font-size:18px; text-decoration:none">Chapter 17,"Managing Partitioned Tables and Indexes"</a>.</td>
+                
+               </tr>
+            
+            </table><hr>
+        
+        </div>
+        
+       
+    </body>
+</html>
